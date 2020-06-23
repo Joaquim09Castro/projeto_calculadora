@@ -4,17 +4,66 @@
   <head>
     <meta charset="UTF-8">
 
-    <link rel="style" href="css/reset.css">
-    <link rel="style" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/calculadora.css">
 
   </head>
   <body>
-    <div id="display">
-      
-    </div>
-    <button id="soma">+</button>
-    <button id="num-1">1</button>
-    <button id="igual">=</button>
+    <table id="calculadora-table">
+      <thead>
+        <tr>
+          <th><input id="display" placeholder="0"></input></th>
+        <tr>
+      </thead>
+      <tbody>    
+        <tr>
+          <td>
+            <button id="num-1" class="btn-num btn">1</button>
+            <button id="num-2" class="btn-num btn">2</button>
+            <button id="num-3" class="btn-num btn">3</button>
+            <button id="soma" class="btn-opr btn">+</button>
+          </td>
+    
+        </tr>
+    
+        <tr>
+          <td><button id="num-4" class="btn-num btn">4</button>
+            <button id="num-5" class="btn-num btn">5</button>
+            <button id="num-6" class="btn-num btn">6</button>
+            <button id="subtracao" class="btn-opr btn">-</button>
+          </td>
+    
+        </tr>
+    
+        <tr>
+          <td>
+            <button id="num-7" class="btn-num btn">7</button>
+            <button id="num-8" class="btn-num btn">8</button>
+            <button id="num-9" class="btn-num btn">9</button>
+            <button id="multiplicacao" class="btn-opr btn">x</button>
+          </td>
+    
+        </tr>
+    
+        <tr>
+          <td>
+            <button id="num-0" class="btn-num btn">0</button>
+            <button id="soma" class="btn-opr btn">÷</button>
+          </td>
+        
+        </tr>
+    
+        <tr>
+          <td>
+            <button id="igual" class="btn">=</button>
+            <button id="limpar" class="btn">C</button>
+          </td>
+    
+        </tr>
+    
+      </tbody>
+    </table>
+    
 
     <script src="javascript-files/calculadora.js"></script>
   </body>

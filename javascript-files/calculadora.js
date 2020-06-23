@@ -11,23 +11,23 @@ let acumulador = "";
 
 btn1.onclick = function() {
 
-  calculadora.display.textContent += "1";
+  calculadora.display.value += "1";
 
 }
 
 btnSoma.onclick = function() {
 
-  acumulador += calculadora.display.innerText;
+  acumulador += calculadora.display.value;
   acumulador += " + ";
-  calculadora.display.innerText = "";
+  calculadora.display.value = "";
 
 }
 
 btnIgual.onclick = function() {
 
-  acumulador += calculadora.display.innerText;
+  acumulador += calculadora.display.value;
   let resultado = eval(acumulador);
-  calculadora.display.innerText = resultado;
+  calculadora.display.value = resultado;
   acumulador = "";
 
 }

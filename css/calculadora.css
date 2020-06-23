@@ -1,0 +1,11 @@
+#calculadora-table {
+  text-align: center;
+}
+
+.btn {
+  width: 22%;
+}
+
+#num-0, #igual {
+  width: 71%;
+}
