@@ -1,33 +1,43 @@
-//objeto calculadora
 let calculadora = {};
 
 calculadora.display = document.querySelector("#display");
+calculadora.oprLog = document.querySelector("#log-operacoes");
 
-let btn1 = document.querySelector("#num-1");
-let btnSoma = document.querySelector("#soma");
 let btnIgual = document.querySelector("#igual");
+let btnClear = document.querySelector("#limpar");
+let btnClearAll = document.querySelector("#limpar-total");
 
-let acumulador = "";
+function adicionaLog(str) {
 
-btn1.onclick = function() {
-
-  calculadora.display.value += "1";
-
-}
-
-btnSoma.onclick = function() {
-
-  acumulador += calculadora.display.value;
-  acumulador += " + ";
-  calculadora.display.value = "";
+  let item = document.createElement("p");
+  item.textContent = str;
+  calculadora.oprLog.appendChild(item);
 
 }
 
 btnIgual.onclick = function() {
 
-  acumulador += calculadora.display.value;
-  let resultado = eval(acumulador);
-  calculadora.display.value = resultado;
-  acumulador = "";
+  efetuarConta();
+  calculadora.display.value = conta[0];
+  conta = [];
+
+  adicionaLog(`=`);
+  adicionaLog(`${calculadora.display.value}`);
+  adicionaLog(`------`);
+
+}
+
+btnClear.onclick = function() {
+
+  calculadora.display.value = "";
+  adicionaLog(`________________________`);
+
+}
+
+btnClearAll.onclick = function() {
+
+  calculadora.display.value = "";
+  conta = [];
+  calculadora.oprLog.innerHTML = "";
 
 }

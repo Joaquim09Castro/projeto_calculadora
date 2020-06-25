@@ -9,10 +9,13 @@
 
   </head>
   <body>
+    <header>
+      <h1 id="titulo-pagina">Calculadora</h1>
+    </header>
     <table id="calculadora-table">
       <thead>
         <tr>
-          <th><input id="display" placeholder="0"></input></th>
+          <th><input id="display" readonly></input></th>
         <tr>
       </thead>
       <tbody>    
@@ -48,7 +51,7 @@
         <tr>
           <td>
             <button id="num-0" class="btn-num btn">0</button>
-            <button id="soma" class="btn-opr btn">÷</button>
+            <button id="divisao" class="btn-opr btn">÷</button>
           </td>
         
         </tr>
@@ -60,11 +63,23 @@
           </td>
     
         </tr>
+
+        <tr>
+          <td>
+            <button id="limpar-total" class="btn">Limpa</button>
+          </td>
+
+        </tr>
+
+        <!--adicionar botão de limpeza de log-->
     
       </tbody>
     </table>
+    <div id="log-operacoes">
+    </div>
     
-
+    <script src="javascript-files/numPad.js"></script>
+    <script src="javascript-files/oprPad.js"></script>
     <script src="javascript-files/calculadora.js"></script>
   </body>
 
