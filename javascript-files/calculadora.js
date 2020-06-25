@@ -24,6 +24,7 @@ btnIgual.onclick = function() {
 btnClear.onclick = function() {
 
   calculadora.display.value = "";
+  conta = [];
   adicionaLog(`________________________`);
 
 }

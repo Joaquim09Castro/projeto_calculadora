@@ -9,10 +9,9 @@ let oprCheck = "";
 
 btnSoma.onclick = function() {
 
-  oprCheck = "+";
-
   efetuarConta();
 
+  oprCheck = "+";
   adicionaLog(`${oprCheck}`);
 
   calculadora.display.value = "";
@@ -23,10 +22,9 @@ btnSoma.onclick = function() {
 
 btnSubtracao.onclick = function() {
 
-  oprCheck = "-";
-
   efetuarConta();
 
+  oprCheck = "-";
   adicionaLog(`${oprCheck}`);
 
   calculadora.display.value = "";
@@ -37,24 +35,22 @@ btnSubtracao.onclick = function() {
 
 btnMultiplicacao.onclick = function() {
 
-  oprCheck = "*";
-
   efetuarConta();
 
+  oprCheck = "*";
   adicionaLog(`${oprCheck}`);
 
-  calculadora.display.value = conta[0];
+  calculadora.display.value = "";
 
   console.log(conta);
 
 }
 
 btnDivisao.onclick = function() {
-
-  oprCheck = "/";
   
   efetuarConta();
 
+  oprCheck = "/";
   adicionaLog(`${oprCheck}`);
 
   calculadora.display.value = "";
@@ -65,7 +61,6 @@ btnDivisao.onclick = function() {
 
 function efetuarConta() {
 
-  //Problema na captação do valor do display
   conta.push(parseInt(calculadora.display.value))
 
   adicionaLog(`${calculadora.display.value}`);
@@ -77,7 +72,7 @@ function efetuarConta() {
       hold += (conta[0] + conta[1]);
       conta = [];
       conta.push(hold);
-      hold = 0;
+      hold = [];
 
     }
     
@@ -86,7 +81,7 @@ function efetuarConta() {
       hold += (conta[0] - conta[1]);
       conta = [];
       conta.push(hold);
-      hold = 0;
+      hold = [];
 
     }
     
@@ -95,7 +90,7 @@ function efetuarConta() {
       hold += (conta[0] * conta[1]);
       conta = [];
       conta.push(hold);
-      hold = 0;
+      hold = [];
 
     }
     
@@ -104,7 +99,7 @@ function efetuarConta() {
       hold += (conta[0] / conta[1]);
       conta = [];
       conta.push(hold);
-      hold = 0;
+      hold = [];
 
     }
 
