@@ -6,7 +6,7 @@ let btn5 = document.querySelector("#num-5");
 let btn6 = document.querySelector("#num-6");
 let btn7 = document.querySelector("#num-7");
 let btn8 = document.querySelector("#num-8");
-let btn9 = document.querySelector("#num-9");
+let btn9 = document.querySelector("#num-9"); 
 let btn0 = document.querySelector("#num-0");
 
 btn1.onclick = function() {

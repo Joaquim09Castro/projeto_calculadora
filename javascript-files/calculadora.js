@@ -3,17 +3,11 @@ let calculadora = {};
 calculadora.display = document.querySelector("#display");
 calculadora.oprLog = document.querySelector("#log-operacoes");
 
+let displayValor;
+
 let btnIgual = document.querySelector("#igual");
 let btnClear = document.querySelector("#limpar");
 let btnClearAll = document.querySelector("#limpar-total");
-
-function adicionaLog(str) {
-
-  let item = document.createElement("p");
-  item.textContent = str;
-  calculadora.oprLog.appendChild(item);
-
-}
 
 btnIgual.onclick = function() {
 
@@ -39,5 +33,13 @@ btnClearAll.onclick = function() {
   calculadora.display.value = "";
   conta = [];
   calculadora.oprLog.innerHTML = "";
+
+}
+
+function adicionaLog(str) {
+
+  let item = document.createElement("p");
+  item.textContent = str;
+  calculadora.oprLog.appendChild(item);
 
 }
