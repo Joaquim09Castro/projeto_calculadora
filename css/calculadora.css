@@ -53,14 +53,19 @@ header {
   color: #e4e4e4;
 }
 
-#num-0, #igual {
-  width: 64%;
+#num-0 {
+  width: 42.5%;
+}
+
+#decimal {
+  width: 20.5%;
 }
 
 #igual {
   color: #e4e4e4;
   background-color: #11aa11;
   margin: 8px 0 3px;
+  width: 64%;
 }
 
 #limpar {

@@ -9,59 +9,51 @@ let oprCheck = "";
 
 btnSoma.onclick = function() {
 
-  efetuarConta();
+  efetuaConta();
 
   oprCheck = "+";
-  adicionaLog(`${oprCheck}`);
-
-  calculadora.display.value = "";
-
-  console.log(conta);
+  
+  concluiOpr();
 
 }
 
 btnSubtracao.onclick = function() {
 
-  efetuarConta();
+  efetuaConta();
 
   oprCheck = "-";
-  adicionaLog(`${oprCheck}`);
 
-  calculadora.display.value = "";
-
-  console.log(conta);
+  concluiOpr();
 
 }
 
 btnMultiplicacao.onclick = function() {
 
-  efetuarConta();
+  efetuaConta();
 
   oprCheck = "*";
-  adicionaLog(`${oprCheck}`);
-
-  calculadora.display.value = "";
-
-  console.log(conta);
+  
+  concluiOpr();
 
 }
 
 btnDivisao.onclick = function() {
   
-  efetuarConta();
+  efetuaConta();
 
   oprCheck = "/";
-  adicionaLog(`${oprCheck}`);
-
-  calculadora.display.value = "";
-
-  console.log(conta);
+  
+  concluiOpr();
 
 }
 
-function efetuarConta() {
+//function (opr) {
+  
+//}
 
-  conta.push(parseInt(calculadora.display.value))
+function efetuaConta() {
+
+  conta.push(Number(calculadora.display.value))
 
   adicionaLog(`${calculadora.display.value}`);
 
@@ -105,4 +97,12 @@ function efetuarConta() {
 
   }
 
+}
+
+function concluiOpr() {
+  adicionaLog(`${oprCheck}`);
+
+  calculadora.display.value = "";
+
+  console.log(conta[0]);
 }

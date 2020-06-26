@@ -3,15 +3,13 @@ let calculadora = {};
 calculadora.display = document.querySelector("#display");
 calculadora.oprLog = document.querySelector("#log-operacoes");
 
-let displayValor;
-
 let btnIgual = document.querySelector("#igual");
 let btnClear = document.querySelector("#limpar");
 let btnClearAll = document.querySelector("#limpar-total");
 
 btnIgual.onclick = function() {
 
-  efetuarConta();
+  efetuaConta();
   calculadora.display.value = conta[0];
   conta = [];
 
