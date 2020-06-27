@@ -13,8 +13,6 @@ btnIgual.onclick = function() {
   calculadora.display.value = conta[0];
   conta = [];
 
-  adicionaLog(`=`);
-  adicionaLog(`${calculadora.display.value}`);
   adicionaLog(`------`);
 
 }

@@ -95,6 +95,9 @@ function efetuaConta() {
 
     }
 
+    adicionaLog(`=`);
+    adicionaLog(`${conta[0]}`);
+
   }
 
 }
