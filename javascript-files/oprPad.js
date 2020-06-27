@@ -64,7 +64,7 @@ function efetuaConta() {
       hold += (conta[0] + conta[1]);
       conta = [];
       conta.push(hold);
-      hold = [];
+      hold = 0;
 
     }
     
@@ -73,7 +73,7 @@ function efetuaConta() {
       hold += (conta[0] - conta[1]);
       conta = [];
       conta.push(hold);
-      hold = [];
+      hold = 0;
 
     }
     
@@ -82,7 +82,7 @@ function efetuaConta() {
       hold += (conta[0] * conta[1]);
       conta = [];
       conta.push(hold);
-      hold = [];
+      hold = 0;
 
     }
     
@@ -91,7 +91,7 @@ function efetuaConta() {
       hold += (conta[0] / conta[1]);
       conta = [];
       conta.push(hold);
-      hold = [];
+      hold = 0;
 
     }
 
