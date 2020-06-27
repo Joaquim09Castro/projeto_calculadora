@@ -4,7 +4,7 @@ let btnMultiplicacao = document.querySelector("#multiplicacao");
 let btnDivisao = document.querySelector("#divisao");
 
 let conta = [];
-let hold = [];
+let hold = 0;
 let oprCheck = "";
 
 btnSoma.onclick = function() {
