@@ -2,7 +2,13 @@ let oprPad = {
   btnSoma: document.querySelector("#soma"),
   btnSubtracao: document.querySelector("#subtracao"),
   btnMultiplicacao: document.querySelector("#multiplicacao"),
-  btnDivisao: document.querySelector("#divisao")
+  btnDivisao: document.querySelector("#divisao"),
+  
+  concluiOpr: function() {
+    calculadora.adicionaLog(`${oprCheck}`);
+    calculadora.display.value = "";
+    //console.log(conta[0])
+  }
 }
 
 let conta = [];
@@ -11,91 +17,32 @@ let oprCheck = "";
 
 oprPad.btnSoma.onclick = function() {
   if (calculadora.display.value != "") {
-    efetuaConta();
+    calculadora.efetuaConta();
     oprCheck = "+";
-    concluiOpr();
+    oprPad.concluiOpr();
   }
 }
 
 oprPad.btnSubtracao.onclick = function() {
   if (calculadora.display.value != "") {
-    efetuaConta();
+    calculadora.efetuaConta();
     oprCheck = "-"
-    concluiOpr();
+    oprPad.concluiOpr();
   }
 }
 
 oprPad.btnMultiplicacao.onclick = function() {
   if (calculadora.display.value != "") {
-    efetuaConta();
+    calculadora.efetuaConta();
     oprCheck = "*";
-    concluiOpr();
+    oprPad.concluiOpr();
   }
 }
 
 oprPad.btnDivisao.onclick = function() {
     if (calculadora.display.value != "") {
-    efetuaConta();
+    calculadora.efetuaConta();
     oprCheck = "/";
-    concluiOpr();
+    oprPad.concluiOpr();
   }
-}
-
-function efetuaConta() {
-
-  conta.push(Number(calculadora.display.value))
-
-  adicionaLog(`${calculadora.display.value}`);
-
-  if (conta.length == 2) {
-
-    if ( oprCheck == "+") {
-      
-      hold += (conta[0] + conta[1]);
-      conta = [];
-      conta.push(hold);
-      hold = 0;
-
-    }
-    
-    if ( oprCheck == "-") {
-      
-      hold += (conta[0] - conta[1]);
-      conta = [];
-      conta.push(hold);
-      hold = 0;
-
-    }
-    
-    if ( oprCheck == "*") {
-        
-      hold += (conta[0] * conta[1]);
-      conta = [];
-      conta.push(hold);
-      hold = 0;
-
-    }
-    
-    if ( oprCheck == "/") {
-        
-      hold += (conta[0] / conta[1]);
-      conta = [];
-      conta.push(hold);
-      hold = 0;
-
-    }
-
-    adicionaLog(`=`);
-    adicionaLog(`${conta[0]}`);
-
-  }
-
-}
-
-function concluiOpr() {
-  adicionaLog(`${oprCheck}`);
-
-  calculadora.display.value = "";
-
-  console.log(conta[0]);
 }

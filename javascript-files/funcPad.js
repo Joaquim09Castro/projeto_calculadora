@@ -7,13 +7,11 @@ let funcPad = {
 funcPad.btnIgual.onclick = function() {
 
   if (calculadora.display.value != "") {
-    efetuaConta();
+    calculadora.efetuaConta();
     calculadora.display.value = conta[0];
     conta = [];
-    adicionaLog(`------`);
-    
+    calculadora.adicionaLog(`------`);
   }
-
 }
 
 funcPad.btnClear.onclick = function() {
@@ -22,16 +20,13 @@ funcPad.btnClear.onclick = function() {
     calculadora.display.value = "";
     conta = [];
 
-    if (oprLog.innerHTML != "") adicionaLog(`________________________`);
-
+    calculadora.adicionaLog(`________________________`);
+    
   }
-
 }
 
 funcPad.btnClearAll.onclick = function() {
-
   calculadora.display.value = "";
   conta = [];
   calculadora.oprLog.innerHTML = "";
-
 }
