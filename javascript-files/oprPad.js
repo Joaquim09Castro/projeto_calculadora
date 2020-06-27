@@ -41,10 +41,6 @@ oprPad.btnDivisao.onclick = function() {
   }
 }
 
-//function (opr) {
-  
-//}
-
 function efetuaConta() {
 
   conta.push(Number(calculadora.display.value))
