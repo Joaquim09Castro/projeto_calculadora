@@ -9,8 +9,8 @@
 
   </head>
   <body>
-    <header>
-      <h1 id="titulo-pagina">Calculadora</h1>
+    <header class="cabecalho">
+      <h1 class="titulo">Calculadora</h1>
     </header>
     <table id="calculadora-table">
       <thead>
@@ -52,7 +52,7 @@
           <td>
             <button id="num-0" class="btn-num btn">0</button>
             <button id="decimal" class="btn">.</button>
-            <button id="divisao" class="btn-opr btn">÷</button>
+            <button id="divisao" class="btn-opr btn">&#247;</button>
           </td>
         
         </tr>
@@ -76,11 +76,15 @@
     
       </tbody>
     </table>
+    <div class="cabecalho">
+      <h1 class="titulo">Log de Operações</h1>
+    </div>
     <div id="log-operacoes">
     </div>
-    
+   
     <script src="javascript-files/numPad.js"></script>
     <script src="javascript-files/oprPad.js"></script>
+    <script src="javascript-files/funcPad.js"></script>
     <script src="javascript-files/calculadora.js"></script>
   </body>
 

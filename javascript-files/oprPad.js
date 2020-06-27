@@ -1,50 +1,44 @@
-let btnSoma = document.querySelector("#soma");
-let btnSubtracao = document.querySelector("#subtracao");
-let btnMultiplicacao = document.querySelector("#multiplicacao");
-let btnDivisao = document.querySelector("#divisao");
+let oprPad = {
+  btnSoma: document.querySelector("#soma"),
+  btnSubtracao: document.querySelector("#subtracao"),
+  btnMultiplicacao: document.querySelector("#multiplicacao"),
+  btnDivisao: document.querySelector("#divisao")
+}
 
 let conta = [];
 let hold = 0;
 let oprCheck = "";
 
-btnSoma.onclick = function() {
-
-  efetuaConta();
-
-  oprCheck = "+";
-  
-  concluiOpr();
-
+oprPad.btnSoma.onclick = function() {
+  if (calculadora.display.value != "") {
+    efetuaConta();
+    oprCheck = "+";
+    concluiOpr();
+  }
 }
 
-btnSubtracao.onclick = function() {
-
-  efetuaConta();
-
-  oprCheck = "-";
-
-  concluiOpr();
-
+oprPad.btnSubtracao.onclick = function() {
+  if (calculadora.display.value != "") {
+    efetuaConta();
+    oprCheck = "-"
+    concluiOpr();
+  }
 }
 
-btnMultiplicacao.onclick = function() {
-
-  efetuaConta();
-
-  oprCheck = "*";
-  
-  concluiOpr();
-
+oprPad.btnMultiplicacao.onclick = function() {
+  if (calculadora.display.value != "") {
+    efetuaConta();
+    oprCheck = "*";
+    concluiOpr();
+  }
 }
 
-btnDivisao.onclick = function() {
-  
-  efetuaConta();
-
-  oprCheck = "/";
-  
-  concluiOpr();
-
+oprPad.btnDivisao.onclick = function() {
+    if (calculadora.display.value != "") {
+    efetuaConta();
+    oprCheck = "/";
+    concluiOpr();
+  }
 }
 
 //function (opr) {
