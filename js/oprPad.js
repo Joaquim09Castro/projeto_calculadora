@@ -9,7 +9,7 @@ let oprPad = {
     calculadora.display.value = "";
     //console.log(conta[0])
   }
-}
+};
 
 let conta = [];
 let hold = 0;
@@ -21,15 +21,15 @@ oprPad.btnSoma.onclick = function() {
     oprCheck = "+";
     oprPad.concluiOpr();
   }
-}
+};
 
 oprPad.btnSubtracao.onclick = function() {
   if (calculadora.display.value != "") {
     calculadora.efetuaConta();
-    oprCheck = "-"
+    oprCheck = "-";
     oprPad.concluiOpr();
   }
-}
+};
 
 oprPad.btnMultiplicacao.onclick = function() {
   if (calculadora.display.value != "") {
@@ -37,7 +37,7 @@ oprPad.btnMultiplicacao.onclick = function() {
     oprCheck = "*";
     oprPad.concluiOpr();
   }
-}
+};
 
 oprPad.btnDivisao.onclick = function() {
     if (calculadora.display.value != "") {
@@ -45,4 +45,4 @@ oprPad.btnDivisao.onclick = function() {
     oprCheck = "/";
     oprPad.concluiOpr();
   }
-}
+};

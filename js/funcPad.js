@@ -2,7 +2,7 @@ let funcPad = {
   btnIgual: document.querySelector("#igual"),
   btnClear: document.querySelector("#limpar"),
   btnClearAll: document.querySelector("#limpar-total")
-}
+};
 
 funcPad.btnIgual.onclick = function() {
 
@@ -12,7 +12,7 @@ funcPad.btnIgual.onclick = function() {
     conta = [];
     calculadora.adicionaLog(`------`);
   }
-}
+};
 
 funcPad.btnClear.onclick = function() {
 
@@ -23,10 +23,10 @@ funcPad.btnClear.onclick = function() {
     calculadora.adicionaLog(`________________________`);
     
   }
-}
+};
 
 funcPad.btnClearAll.onclick = function() {
   calculadora.display.value = "";
   conta = [];
   calculadora.oprLog.innerHTML = "";
-}
+};

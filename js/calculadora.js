@@ -3,7 +3,7 @@ let calculadora = {
   oprLog: document.querySelector("#log-operacoes"),
   
   efetuaConta: function() {
-    conta.push(Number(calculadora.display.value))
+    conta.push(Number(calculadora.display.value));
     calculadora.adicionaLog(`${calculadora.display.value}`);
     
     if (conta.length == 2) {
@@ -46,4 +46,4 @@ let calculadora = {
     item.textContent = str;
     calculadora.oprLog.appendChild(item);
   }
-}
+};
