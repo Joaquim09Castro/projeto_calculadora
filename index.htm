@@ -1,91 +1,94 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/calculadora.css">
+<head>
+  <meta charset="UTF-8">
 
-  </head>
-  <body>
-    <header class="cabecalho">
-      <h1 class="titulo">Calculadora</h1>
-    </header>
-    <table id="calculadora-table">
-      <thead>
-        <tr>
-          <th><input id="display" readonly></input></th>
-        <tr>
-      </thead>
-      <tbody>    
-        <tr>
-          <td>
-            <button id="num-1" class="btn-num btn">1</button>
-            <button id="num-2" class="btn-num btn">2</button>
-            <button id="num-3" class="btn-num btn">3</button>
-            <button id="soma" class="btn-opr btn">+</button>
-          </td>
-    
-        </tr>
-    
-        <tr>
-          <td><button id="num-4" class="btn-num btn">4</button>
-            <button id="num-5" class="btn-num btn">5</button>
-            <button id="num-6" class="btn-num btn">6</button>
-            <button id="subtracao" class="btn-opr btn">-</button>
-          </td>
-    
-        </tr>
-    
-        <tr>
-          <td>
-            <button id="num-7" class="btn-num btn">7</button>
-            <button id="num-8" class="btn-num btn">8</button>
-            <button id="num-9" class="btn-num btn">9</button>
-            <button id="multiplicacao" class="btn-opr btn">x</button>
-          </td>
-    
-        </tr>
-    
-        <tr>
-          <td>
-            <button id="num-0" class="btn-num btn">0</button>
-            <button id="decimal" class="btn">.</button>
-            <button id="divisao" class="btn-opr btn">&#247;</button>
-          </td>
-        
-        </tr>
-    
-        <tr>
-          <td>
-            <button id="igual" class="btn">=</button>
-            <button id="limpar" class="btn">C</button>
-          </td>
-    
-        </tr>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/calculadora.css">
 
-        <tr>
-          <td>
-            <button id="limpar-total" class="btn">Limpa</button>
-          </td>
+</head>
 
-        </tr>
+<body>
+  <header class="cabecalho">
+    <h1 class="titulo">Calculadora</h1>
+  </header>
+  <table id="calculadora-table">
+    <thead>
+      <tr>
+        <th><input id="display" readonly></input></th>
+      <tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <button id="num-1" class="btn-num btn">1</button>
+          <button id="num-2" class="btn-num btn">2</button>
+          <button id="num-3" class="btn-num btn">3</button>
+          <button id="soma" class="btn-opr btn">+</button>
+        </td>
 
-        <!--adicionar botão de limpeza de log-->
-    
-      </tbody>
-    </table>
-    <div class="cabecalho">
-      <h1 class="titulo">Log de Operações</h1>
-    </div>
-    <div id="log-operacoes">
-    </div>
-   
-    <script src="./js/numPad.js"></script>
-    <script src="./js/oprPad.js"></script>
-    <script src="./js/funcPad.js"></script>
-    <script src="./js/calculadora.js"></script>
-  </body>
+      </tr>
+
+      <tr>
+        <td><button id="num-4" class="btn-num btn">4</button>
+          <button id="num-5" class="btn-num btn">5</button>
+          <button id="num-6" class="btn-num btn">6</button>
+          <button id="subtracao" class="btn-opr btn">-</button>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <button id="num-7" class="btn-num btn">7</button>
+          <button id="num-8" class="btn-num btn">8</button>
+          <button id="num-9" class="btn-num btn">9</button>
+          <button id="multiplicacao" class="btn-opr btn">x</button>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <button id="num-0" class="btn-num btn">0</button>
+          <button id="decimal" class="btn">.</button>
+          <button id="divisao" class="btn-opr btn">&#247;</button>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <button id="igual" class="btn">=</button>
+          <button id="limpar" class="btn">C</button>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <button id="limpar-total" class="btn">Limpa</button>
+        </td>
+
+      </tr>
+
+      <!--adicionar botão de limpeza de log-->
+
+    </tbody>
+  </table>
+  <div class="cabecalho">
+    <h1 class="titulo">Log de Operações</h1>
+  </div>
+  <div id="log-operacoes">
+  </div>
+
+  <script src="./js/numPad.js"></script>
+  <script src="./js/oprPad.js"></script>
+  <script src="./js/funcPad.js"></script>
+  <script src="./js/calculadora.js"></script>
+  <script src="./js/keyboardList.js"></script>
+</body>
 
 </html>

@@ -4,7 +4,7 @@ let funcPad = {
   btnClearAll: document.querySelector("#limpar-total")
 };
 
-funcPad.btnIgual.onclick = function() {
+funcPad.btnIgual.onclick = function () {
 
   if (calculadora.display.value != "") {
     calculadora.efetuaConta();
@@ -14,18 +14,17 @@ funcPad.btnIgual.onclick = function() {
   }
 };
 
-funcPad.btnClear.onclick = function() {
+funcPad.btnClear.onclick = function () {
 
   if (calculadora.display.value != "") {
     calculadora.display.value = "";
     conta = [];
 
     calculadora.adicionaLog(`________________________`);
-    
   }
 };
 
-funcPad.btnClearAll.onclick = function() {
+funcPad.btnClearAll.onclick = function () {
   calculadora.display.value = "";
   conta = [];
   calculadora.oprLog.innerHTML = "";
